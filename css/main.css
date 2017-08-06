@@ -76,7 +76,8 @@ a.header__element-contact--email {
   text-decoration: underline;
 }
 
-.header__element-contact:hover {
+.header__element-contact:hover,
+.header__element-contact:active {
   color: #aaa;
 }
 
@@ -137,7 +138,8 @@ a.header__element-contact--email {
   transition: 0.3s ease;
 }
 
-.side-panel__element-item a:hover {
+.side-panel__element-item a:hover,
+.side-panel__element-item a:active {
   color: #aaa;
 }
 
@@ -178,6 +180,13 @@ a.header__element-contact--email {
 
 .article__item p {
   position: relative;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.article__item p:hover,
+.article__item p:active {
+  transform: scale(1.1);
 }
 
 .article__item .glyphicon {
@@ -185,6 +194,13 @@ a.header__element-contact--email {
   top: 15px;
   right: 15px;
   font-size: 20px;
+  color: #aaa;
+  transition: 0.3s ease;
+}
+
+.article__item p:hover .glyphicon,
+.article__item p:active .glyphicon {
+  color: #000;
 }
 
 .article__item p {
@@ -281,7 +297,8 @@ a.header__element-contact--email {
   transition: 0.3s ease;
 }
 
-.footer__element-item a:hover {
+.footer__element-item a:hover,
+.footer__element-item a:active {
   color: #aaa;
 }
 
