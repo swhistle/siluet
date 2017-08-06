@@ -189,18 +189,21 @@ a.header__element-contact--email {
   transform: scale(1.1);
 }
 
-.article__item .glyphicon {
+.article__item p::after {
   position: absolute;
-  top: 15px;
-  right: 15px;
-  font-size: 20px;
-  color: #aaa;
+  display: block;
+  content: '';
+  top: 12px;
+  right: 12px;
+  width: 20px;
+  height: 20px;
+  background: url(../img/icon_bag.png) no-repeat;
   transition: 0.3s ease;
 }
 
-.article__item p:hover .glyphicon,
-.article__item p:active .glyphicon {
-  color: #000;
+.article__item p:hover::after,
+.article__item p:active::after {
+  opacity: 0.3;
 }
 
 .article__item p {
