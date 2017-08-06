@@ -5,6 +5,7 @@
 body {
   font-size: 14px;
   line-height: 22px;
+  color: #777777;
 }
 
 .container {
@@ -57,7 +58,7 @@ a.header__element-contact--email {
 
 .main {
   padding-top: 20px;
-  padding-bottom: 35px;
+  padding-bottom: 30px;
   border-bottom: 1px solid #696969;
   // margin-left: -10px;
   // margin-right: -10px;
@@ -116,7 +117,16 @@ a.header__element-contact--email {
   list-style: none;
 }
 
+.side-panel__element-item a {
+  color: #fff;
+  font-size: 14px;
+  line-height: 22px;
+  transition: 0.3s ease;
+}
 
+.side-panel__element-item a:hover {
+  color: #aaa;
+}
 
 .article {
   width: 78%;
@@ -127,7 +137,16 @@ a.header__element-contact--email {
   min-height: 150px;
   margin-bottom: 20px;
   background-color: #dcdcdc;
-  padding: 10px;
+  padding: 15px;
+}
+
+.article__info-description {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.article__info-list {
+  margin-bottom: 25px;
 }
 
 .article__list {
@@ -154,17 +173,19 @@ a.header__element-contact--email {
 
 .article__service {
   display: flex;
+  justify-content: space-between;
 }
 
 .article__service-column {
-  padding: 0 10px;
+  width: calc(50% - 10px);
+  padding: 15px;
+  background-color: #dcdcdc;
 }
 
 .article__service-column p {
-  background-color: #dcdcdc;
-  min-height: 150px;
   margin: 0;
-  padding: 10px;
+  margin-bottom: 25px;
+  padding: 0;
 }
 
 .footer {
@@ -174,7 +195,8 @@ a.header__element-contact--email {
 .footer__element {
   min-height: 82px;
   background-color: #777777;
-  padding: 10px;
+  padding: 15px;
+  padding-bottom: 5px;
 }
 
 .footer__element--sandwich {
@@ -186,12 +208,52 @@ a.header__element-contact--email {
 }
 
 .footer__element-list {
+  padding-left: 10px;
+}
+
+.footer__element-list--square {
+
+}
+
+.footer__element-list:nth-child(2) {
+  margin-left: 55px;
 }
 
 .footer__element-list--column {
   display: inline-block;
 }
 
+.footer__element-item {
+  list-style: none;
+  color: #fff;
+}
+
+.footer__element-item--square {
+  padding-left: 10px;
+  position: relative;
+}
+
+.footer__element-item--square::after {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+}
+
+.footer__element-item a {
+  color: #fff;
+  font-size: 14px;
+  line-height: 22px;
+  transition: 0.3s ease;
+}
+
+.footer__element-item a:hover {
+  color: #aaa;
+}
 
 @media (min-width: 992px) {
 
