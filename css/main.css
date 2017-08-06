@@ -9,7 +9,9 @@ body {
 }
 
 .container {
-  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100vh;
 }
 
 .header {
@@ -163,8 +165,6 @@ a.header__element-contact--email {
 .article__list {
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
   margin-right: -10px;
   margin-left: -10px;
 }
@@ -211,6 +211,7 @@ a.header__element-contact--email {
 
 .footer {
   padding-top: 35px;
+  margin-top: auto;
 }
 
 .footer__column {
@@ -336,7 +337,6 @@ a.header__element-contact--email {
 
   .main {
     margin-top: 180px;
-    display: flex;
     flex-flow: row nowrap;
   }
 
