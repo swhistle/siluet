@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Test</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -9,16 +10,16 @@
   </head>
   <body>
     <div class="container">
-      <header class="header">
-        <div class="header__column">
+      <header class="row header">
+        <div class="col-xs-4 header__column">
           <p class="header__element"></p>
         </div>
 
-        <div class="header__column">
+        <div class="col-xs-8 header__column">
           <p class="header__element"></p>
         </div>
 
-        <div class="header__column">
+        <div class="col-xs-12 header__column">
           <p class="header__element text-right">
             <a href="tel:+7(812)12321-31" class="header__element-contact header__element-contact--tel" title="">+7 (812) 12321-31</a><br>
             <a href="#" class="header__element-contact header__element-contact--email" title="">manager@gmail.com</a>
@@ -26,9 +27,9 @@
         </div>
       </header>
 
-      <main class="main">
-        <nav class="side-panel">
-          <div class="side-panel__element side-panel__element--top">
+      <main class="row main">
+        <nav class="col-xs-12 col-md-3 side-panel">
+          <div class="col-xs-6 side-panel__element side-panel__element--top">
             <span class="side-panel__element-title">Создание сайтов</span>
             <ul class="side-panel__element-list">
               <li class="side-panel__element-item">
@@ -68,12 +69,12 @@
 
           </div>
 
-          <div class="side-panel__element side-panel__element--bottom">
+          <div class="col-xs-6 side-panel__element side-panel__element--bottom">
 
           </div>
         </nav>
 
-        <article class="article">
+        <article class="col-xs-12 col-md-9 article">
           <div class="article__info">
             <b class="article__info-description">PSD файл с макетом. Макет разбит по слоям и сгрупированн по папкам:</b>
             <ul class="article__info-list">
@@ -84,38 +85,38 @@
             </ul>
             <span>Текстовое описание задания и требования.</span>
           </div>
-          <ul class="article__list">
-            <li class="article__item">
+          <ul class="row article__list">
+            <li class="col-xs-4 article__item">
               <p>
                 <i class="glyphicon glyphicon-share"></i>
               </p>
             </li>
-            <li class="article__item">
+            <li class="col-xs-4 article__item">
               <p>
                 <i class="glyphicon glyphicon-share"></i>
               </p>
             </li>
-            <li class="article__item">
+            <li class="col-xs-4 article__item">
               <p>
                 <i class="glyphicon glyphicon-share"></i>
               </p>
             </li>
-            <li class="article__item">
+            <li class="col-xs-4 article__item">
               <p>
                 <i class="glyphicon glyphicon-share"></i>
               </p>
             </li>
-            <li class="article__item">
+            <li class="col-xs-4 article__item">
               <p>
                 <i class="glyphicon glyphicon-share"></i>
               </p>
             </li>
-            <li class="article__item">
+            <li class="col-xs-4 article__item">
               <p>
                 <i class="glyphicon glyphicon-share"></i>
               </p>
             </li>
-            <li class="article__item">
+            <li class="col-xs-4 article__item">
               <p>
                 <i class="glyphicon glyphicon-share"></i>
               </p>
@@ -123,7 +124,7 @@
 
           </ul>
           <div class="article__service">
-            <div class="article__service-column">
+            <div class="col-xs-12 article__service-column">
               <p>
                 Студия разработает полнофункциональный продукт ориентированный на целевую аудиторию и эффективно решающий поставленные перед ним маркетинговые задачи. Опыт работ и использование собственных технологий, позволяет предлагать услугу изготовления сайта в Москве в разумные сроки.
               </p>
@@ -138,7 +139,7 @@
               </p>
 
             </div>
-            <div class="article__service-column">
+            <div class="col-xs-12 article__service-column">
               <p>
                 Студия разработает полнофункциональный продукт ориентированный на целевую аудиторию.
               </p>
